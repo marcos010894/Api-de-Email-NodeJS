@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de api de E-mail POSt</title>
+</head>
+
+<body>
+    <script>
+        function dadosSet() {
+            let dados = {
+                emailDestination: ['marcosmachadodev@gmail.com'],
+                mensagem: `<h1> Teste de uma unica mensagem </h1>`
+            }
+            fetch("localhost:3000/email2", {
+                method: "GET",
+            }).then(data=>{
+                console.log(data)
+            });
+        }
+
+    </script>
+</body>
+
+</html>
