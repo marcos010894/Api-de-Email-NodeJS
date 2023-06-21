@@ -3,7 +3,7 @@ const express = require('express')
 const server = express();
 var nodemailer = require("nodemailer");
 var emailASerEnviado = {
-    from: "alerta@globalty.com.br",
+    from: "",
     to: '',
     subject: '',
     html: '',
@@ -34,8 +34,8 @@ var remetente = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-        user: "alerta@globalty.com.br",
-        pass: "Senha@123"
+        user: "Seuemail",
+        pass: "SuaSenha"
     }
 });
 
