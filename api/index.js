@@ -34,8 +34,8 @@ var remetente = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: "alerta@globalty.com.br",
-        pass: "Senha@123"
+        user: "seuemail",
+        pass: "suasenha"
     }
 });
 
